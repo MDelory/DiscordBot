@@ -32,7 +32,7 @@ const Wiki = require("wikijs");
 var yt = require("./youtube_plugin");
 var youtube_plugin = new yt();
 var prefix = ".";
-var mention = "<@1930903359700619264>";
+var mention = "<@193090335XXXXXXXX>";
 
 
 client.on("ready", () => {
@@ -43,7 +43,7 @@ client.on("ready", () => {
 
 client.on('message', message => {
     if(!message.guild) return; // Evite les erreurs lors d'un DM avec restriction par role
-    var role = message.guild.roles.find("name","Dieu");
+    var role = message.guild.roles.find("name","Admin");
     var author = message.author;
     var salut = message.content.toUpperCase();
     var array_msg = message.content.split(' ');
