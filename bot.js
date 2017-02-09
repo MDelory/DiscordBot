@@ -20,17 +20,17 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.  */
 
+var AuthDetails = require("./auth.json");
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const weather = require("weather-js");
-const token = "Mjc0NjA3MDU1MjI5MTU3Mzc2.C20jqQ.mLnpO0Sjd5a5JcKO-p0LXb-YmTU";
+const token = AuthDetails.discord_token;
 const Wiki = require("wikijs");
 
 
 var yt = require("./youtube_plugin");
 var youtube_plugin = new yt();
-var AuthDetails = require("./auth.json");
 var prefix = ".";
 var mention = "<@1930903359700619264>";
 
